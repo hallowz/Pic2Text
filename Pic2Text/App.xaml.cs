@@ -1,8 +1,4 @@
-﻿using Pic2Text.Services;
-using Pic2Text.Views;
-using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace Pic2Text
 {
@@ -13,7 +9,6 @@ namespace Pic2Text
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

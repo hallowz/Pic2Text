@@ -1,0 +1,14 @@
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\Pic2Text.deps.json
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\Pic2Text.dll
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\ref\Pic2Text.dll
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\Pic2Text.pdb
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.AssemblyInfoInputs.cache
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.AssemblyInfo.cs
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.csproj.CoreCompileInputs.cache
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\XamlC.stamp
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.dll
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\ref\Pic2Text.dll
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.pdb

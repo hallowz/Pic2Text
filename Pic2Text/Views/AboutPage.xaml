@@ -15,6 +15,12 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
+    <StackLayout Orientation="Vertical" Padding="10">
+        <ImageButton Padding="110, 20, 110, 20" BorderColor="Black" BackgroundColor="LimeGreen" CornerRadius="10" BorderWidth="5" Source="camera.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Command="{Binding OpenWebCommand}"/>
+        <ImageButton Padding="110, 20, 110, 20" BorderColor="Black" BackgroundColor="Yellow" CornerRadius="10" BorderWidth="5" Source="gallery.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Command="{Binding OpenWebCommand}"/>
+        <ImageButton Padding="110, 20, 110, 20" BorderColor="Black" BackgroundColor="Orange" CornerRadius="10" BorderWidth="5" Source="history.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Command="{Binding OpenWebCommand}"/>
+    </StackLayout>
+    <!--
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -48,5 +54,6 @@
             </StackLayout>
         </ScrollView>
     </Grid>
+    -->
 
 </ContentPage>
