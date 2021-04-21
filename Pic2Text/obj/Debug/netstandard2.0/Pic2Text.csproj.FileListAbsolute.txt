@@ -12,3 +12,5 @@ E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\n
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.dll
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\ref\Pic2Text.dll
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.pdb
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.csprojAssemblyReference.cache
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Views\GalleryPage.xaml.g.cs
