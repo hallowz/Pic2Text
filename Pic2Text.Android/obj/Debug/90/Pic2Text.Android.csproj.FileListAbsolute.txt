@@ -57,6 +57,7 @@ E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\res\drawable\camera.png
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\res\drawable\gallery.png
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\res\drawable\history.png
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\res\drawable\pic2text.png
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\uploadflags.txt
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\resolvedassemblies.hash
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text.Android\obj\Debug\90\android\assets\FormsViewGroup.dll

@@ -983,9 +983,10 @@ int drawable notification_template_icon_bg 0x7f070075
 int drawable notification_template_icon_low_bg 0x7f070076
 int drawable notification_tile_bg 0x7f070077
 int drawable notify_panel_notification_icon_bg 0x7f070078
-int drawable tooltip_frame_dark 0x7f070079
-int drawable tooltip_frame_light 0x7f07007a
-int drawable xamarin_logo 0x7f07007b
+int drawable pic2text 0x7f070079
+int drawable tooltip_frame_dark 0x7f07007a
+int drawable tooltip_frame_light 0x7f07007b
+int drawable xamarin_logo 0x7f07007c
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002
