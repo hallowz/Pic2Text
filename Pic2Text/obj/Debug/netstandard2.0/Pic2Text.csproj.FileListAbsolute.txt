@@ -14,3 +14,8 @@ E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\n
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.pdb
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.csprojAssemblyReference.cache
 E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Views\GalleryPage.xaml.g.cs
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Views\ElementPage.xaml.g.cs
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\Mono.Android.dll
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\Mono.Android.pdb
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\bin\Debug\netstandard2.0\Mono.Android.xml
+E:\School\Semester 2\IOT1026\Repositories\Pic2Text\Pic2Text\Pic2Text\obj\Debug\netstandard2.0\Pic2Text.csproj.CopyComplete

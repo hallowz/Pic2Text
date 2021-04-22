@@ -42,6 +42,18 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.ProjectOxford.Vision": {
+              "target": "Package",
+              "version": "[1.0.393, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[4.0.0.190-beta, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -49,6 +61,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.0-beta, )"
             }
           }
         }
@@ -94,11 +110,27 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Azure.Search.Service": {
+              "target": "Package",
+              "version": "[10.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[4.0.0.190-beta, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -107,6 +139,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.0-beta, )"
             }
           },
           "imports": [
