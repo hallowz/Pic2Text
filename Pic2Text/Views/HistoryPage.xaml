@@ -20,46 +20,10 @@
             <Label Text="History" TextColor="Black" FontFamily="Quicksand" FontAttributes="Bold" FontSize="38" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
             <ScrollView Grid.Row="1">
                 <StackLayout x:Name="buttonStack" Orientation="Vertical" Padding="5" Spacing="10">
-                    <!--><ImageButton Padding="110, 10, 110, 10" BorderColor="Black" BackgroundColor="LimeGreen" CornerRadius="10" BorderWidth="5" Source="camera.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>-->
+
                 </StackLayout>
             </ScrollView>
         </StackLayout>
     </Grid>
-
-    <!--
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
-            </StackLayout>
-        </ScrollView>
-    </Grid>
-    -->
 
 </ContentPage>

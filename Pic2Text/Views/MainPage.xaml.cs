@@ -9,7 +9,6 @@ namespace Pic2Text.Views
         {
             InitializeComponent();
         }
-
         async void GalleryButton_Clicked(object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new GalleryPage());

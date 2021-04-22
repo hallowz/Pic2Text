@@ -213,8 +213,6 @@ namespace Pic2Text.Views
                 await App.Database.SaveElementAsync(p2t);
             }
 
-            // Navigate backwards
-            //await Shell.Current.GoToAsync("..");
         }
     }
 }
