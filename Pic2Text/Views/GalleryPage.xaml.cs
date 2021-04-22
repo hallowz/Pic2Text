@@ -44,9 +44,9 @@ namespace Pic2Text.Views
             try
             {
                 var stream = await result.OpenReadAsync();
-                Save(stream, "temp.jpg");
+                Save(stream, "temp");
                 var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                var filename = System.IO.Path.Combine(path, "temp.jpg");
+                var filename = System.IO.Path.Combine(path, "temp" + App.getHistorySize() + ".jpg");
                 resultImage.Source = ImageSource.FromFile(filename);
                 //READ_TEXT_URL_IMAGE = (string)filename;
             }
@@ -66,7 +66,7 @@ namespace Pic2Text.Views
             else
             {
                 var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                var filename = System.IO.Path.Combine(path, "temp.jpg");
+                var filename = System.IO.Path.Combine(path, "temp" + App.getHistorySize() + ".jpg");
                 readImage(filename);
                 await Navigation.PushAsync(new ElementPage(filename));
             }
@@ -74,7 +74,7 @@ namespace Pic2Text.Views
 
         public void Save(Stream stream, string _name)
         {
-            var _filename = _name;
+            var _filename = _name + App.getHistorySize() + ".jpg";
 
             if (_filename.ToLower().Contains(".jpg") || _filename.ToLower().Contains(".png"))
             {
@@ -184,31 +184,6 @@ namespace Pic2Text.Views
             Console.WriteLine();
             var textUrlFileResults = results.AnalyzeResult.ReadResults;
 
-            /* Read text from URL
-            var textHeaders = await client.ReadInStreamAsync(File.OpenRead(urlFile), language: "en");
-            // After the request, get the operation location (operation ID)
-            string operationLocation = textHeaders.OperationLocation;
-            Thread.Sleep(2000);
-
-            // Retrieve the URI where the extracted text will be stored from the Operation-Location header.
-            // We only need the ID and not the full URL
-            const int numberOfCharsInOperationId = 36;
-            string operationId = operationLocation.Substring(operationLocation.Length - numberOfCharsInOperationId);
-
-            // Extract the text
-            ReadOperationResult results;
-            //Console.WriteLine($"Extracting text from URL file {Path.GetFileName(urlFile)}...");
-            //Console.WriteLine();
-            do
-            {
-                results = await client.GetReadResultAsync(Guid.Parse(operationId));
-            }
-            while ((results.Status == OperationStatusCodes.Running ||
-                results.Status == OperationStatusCodes.NotStarted));
-
-            var textUrlFileResults = results.AnalyzeResult.ReadResults;
-            */
-
             string content = "";
             if (textUrlFileResults != null)
             {
@@ -216,13 +191,13 @@ namespace Pic2Text.Views
                 {
                     foreach (Line line in page.Lines)
                     {
-                        content += line.Text;
+                        content += line.Text + "\n";
                     }
                 }
             }
             
             //addP2T(content);
-            App.addP2T(new P2T() { Text = content, Title = "New P2T" });
+            App.addP2T(new P2T() { Text = content, Title = "New P2T", imageLocation = localFile });
         }
 
         static async void addP2T(string content)

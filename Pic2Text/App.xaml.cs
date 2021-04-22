@@ -60,6 +60,11 @@ namespace Pic2Text
             
         }
 
+        public static void setP2T(P2T p, int i)
+        {
+            history[i] = p;
+        }
+
         public static void setHistory(List<P2T> _history)
         {
             history = _history;

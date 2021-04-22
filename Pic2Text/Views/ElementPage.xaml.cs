@@ -7,6 +7,7 @@ namespace Pic2Text.Views
 {
     public partial class ElementPage : ContentPage
     {
+        private int id;
         public ElementPage()
         {
             InitializeComponent();
@@ -27,10 +28,20 @@ namespace Pic2Text.Views
                     x = false;
                 }
             } while (x);
-            P2T currentP2T = App.history[App.history.Count - 1];
+            id = App.getHistorySize() - 1;
+            P2T currentP2T = App.history[id];
             contentText.Text = currentP2T.Text;
             //contentText.Text = "test";
             //addP2T(Content);
+        }
+
+        public ElementPage(string fileName, string title, string content)
+        {
+            InitializeComponent();
+            imageToRead.Source = ImageSource.FromFile(fileName);
+
+            contentText.Text = content;
+            elementTitle.Text = title;
         }
 
         async void GalleryButton_Clicked(object sender, System.EventArgs e)
@@ -82,6 +93,64 @@ namespace Pic2Text.Views
 
             // Navigate backwards
             //await Shell.Current.GoToAsync("..");
+        }
+
+        void EditorCompleted(object sender, EventArgs e)
+        {
+            if (sender.Equals(contentText))
+            {
+                P2T p = App.getP2T(id);
+                p.Text = contentText.Text;
+                App.setP2T(p, id);
+            } 
+            else if (sender.Equals(elementTitle))
+            {
+                P2T p = App.getP2T(id);
+                p.Title = elementTitle.Text;
+                App.setP2T(p, id);
+            }
+        }
+        void EditorTextChanged(object sender, TextChangedEventArgs e)
+        {
+            var oldText = e.OldTextValue;
+            var newText = e.NewTextValue;
+
+            if (sender.Equals(contentText))
+            {
+                P2T p = App.getP2T(id);
+                p.Text = newText;
+                App.setP2T(p, id);
+            }
+            else if (sender.Equals(elementTitle))
+            {
+                P2T p = App.getP2T(id);
+                p.Title = newText;
+                App.setP2T(p, id);
+            }
+        }
+
+        void Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var oldText = e.OldTextValue;
+            var newText = e.NewTextValue;
+
+            if (sender.Equals(contentText))
+            {
+                P2T p = App.getP2T(id);
+                p.Text = newText;
+                App.setP2T(p, id);
+            }
+            else if (sender.Equals(elementTitle))
+            {
+                P2T p = App.getP2T(id);
+                p.Title = newText;
+                App.setP2T(p, id);
+            }
+        }
+
+        async void CopyButton_Clicked(object sender, System.EventArgs e)
+        {
+            await Clipboard.SetTextAsync(contentText.Text);
         }
     }
 }

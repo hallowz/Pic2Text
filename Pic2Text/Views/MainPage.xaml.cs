@@ -18,5 +18,9 @@ namespace Pic2Text.Views
         {
             //await Navigation.PushAsync(new GalleryPage());
         }
+        async void HistoryButton_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new HistoryPage());
+        }
     }
 }

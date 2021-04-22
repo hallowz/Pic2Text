@@ -11,45 +11,25 @@
         <vm:ElementViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout BackgroundColor="#f6a2bf" Orientation="Vertical" Padding="40, 10, 40, 20">
-        <Editor FontFamily="Quicksand" Text="Element Title" HorizontalOptions="Start" VerticalOptions="StartAndExpand" />
-        <Editor FontFamily="Quicksand" x:Name="contentText" Text="Nothing here." />
-        <Image x:Name="imageToRead" Source="placeholder.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-    </StackLayout>
-    <!--
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
-                </ContentView>
+    <StackLayout BackgroundColor="#f6a2bf" Orientation="Vertical" Padding="30, 10, 30, 10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ImageButton BackgroundColor="#f6a2bf" Padding="0, 0, 0, 0" CornerRadius="10" BorderWidth="5" Source="copy.png" HorizontalOptions="End" VerticalOptions="EndAndExpand" Clicked="CopyButton_Clicked"/>
+            <StackLayout Padding="0, 20, 65, 0">
+                <Entry x:Name="elementTitle" FontAttributes="Bold" FontFamily="Quicksand" Text="Element Title" MaxLength="25" FontSize="28"/>
+            </StackLayout>
+        </Grid>
+            <StackLayout BackgroundColor="White">
+            <StackLayout BackgroundColor="Black" Padding="5">
+                <Editor FontFamily="Quicksand" x:Name="contentText" Text="Nothing here." BackgroundColor="White"/>
             </StackLayout>
         </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
-            </StackLayout>
-        </ScrollView>
-    </Grid>
-    -->
+        <ImageButton x:Name="imageToRead" Padding="40, 20, 40, 20" BorderColor="Black" BackgroundColor="Gray" CornerRadius="10" BorderWidth="5" Source="placeholder.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <ImageButton Aspect="AspectFill" Padding="150, 10, 150, 10" BorderColor="Black" BackgroundColor="Red" CornerRadius="10" BorderWidth="5" Source="delete.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+    
 
 </ContentPage>

@@ -15,8 +15,9 @@
         <Image Source="pic2text.png"/>
         <ImageButton Padding="110, 10, 110, 10" BorderColor="Black" BackgroundColor="LimeGreen" CornerRadius="10" BorderWidth="5" Source="camera.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="CameraButton_Clicked"/>
         <ImageButton Padding="110, 20, 110, 20" BorderColor="Black" BackgroundColor="Yellow" CornerRadius="10" BorderWidth="5" Source="gallery.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="GalleryButton_Clicked"/>
-        <ImageButton Padding="110, 20, 110, 20" BorderColor="Black" BackgroundColor="Orange" CornerRadius="10" BorderWidth="5" Source="history.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Command="{Binding OpenWebCommand}"/>
+        <ImageButton Padding="110, 20, 110, 20" BorderColor="Black" BackgroundColor="Orange" CornerRadius="10" BorderWidth="5" Source="history.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="HistoryButton_Clicked"/>
     </StackLayout>
+    
     <!--
     <Grid>
         <Grid.RowDefinitions>
